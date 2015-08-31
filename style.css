@@ -76,7 +76,7 @@ html, body{
 									text-align: right;
 								}
 								.splash h2 {
-									font-family: 'Lora', serif;
+									font-family: 'Merriweather', serif;
 									font-style: italic;
 									font-size: 20px;
 									text-align: right;
@@ -87,8 +87,6 @@ nav{
 	bottom: 0;
 	padding: 10px 0;
 	background-color: white;
-	font-family: 'Lora', serif;
-	font-style: italic;
 }
 				nav ul{
 					list-style-type: none;
@@ -106,7 +104,7 @@ nav{
 					color: #000;
 				}
 				nav a:hover {
-					color: #444;
+					color: #888;
 				}
 				.fixed {
 					position: fixed; 
