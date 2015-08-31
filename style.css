@@ -55,21 +55,29 @@ html, body{
 .splash {
 	height: 100vh;
 	width: 100%;
-	text-align: center;
-	background-image: url('https://images.unsplash.com/photo-1416677357736-79cd2bce22c5?q=80&fm=jpg&s=947a12b70e91e9781093dd7a068beaab');
-	background-size:cover;
 }
 				.inner{
 					position: relative;
-					top: 50%;
-					transform: translateY(-50%);
+					top: 40%;
+					transform: translateY(-70%);
     				width: 650px;
     				margin: 0 auto;
 				}
 				.inside{
-    				width: 200px;
+    				width: 300px;
     				float: right;
     				color: white;
+				}
+				.splash h1 {
+					font-family: 'Nixie One', cursive;
+					font-size: 50px;
+					text-align: right;
+				}
+				.splash h2 {
+					font-family: 'Lora', serif;
+					font-style: italic;
+					font-size: 20px;
+					text-align: right;
 				}
 nav{
 	width: 100%;
