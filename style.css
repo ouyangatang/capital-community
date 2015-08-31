@@ -55,13 +55,17 @@ html, body{
 body{
 	background-color: #fff;
 }
-#splash {
+.splash {
 	height: 100vh;
+	width: 100%;
+	text-align: center;
 }
-				#splash h1{
-					text-align: center;
-					padding-top: 250px;
-					font-size: 50px;
+				.inside{
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+    				width: 650px;
+    				margin: 0 auto;
 				}
 nav{
 	width: 100%;
@@ -99,7 +103,6 @@ nav{
 .content{
 	width: 650px;
 	margin: 0 auto;
-	padding: 100px 0;
 	height: 100%;
 }	
 				h2 {
@@ -140,23 +143,9 @@ nav{
 					font-weight: 600;
 				}
 .scrollsection {
+	width: 100%;
+	display: table;
 }
-.stat{
-	width: 190px;
-	float: left;
-	padding: 12px;
-	height: 230px;
-	text-align: center;
-	font-size: 15px;
-	border-right:1px dashed #fff; 
-}
-				#last {
-					border-right: none;
-				}
-				.stat h3 {
-					font-size: 70px;
-				}
-
 .profile {
 	float: left;
 	text-align: center;
@@ -164,16 +153,16 @@ nav{
 	width: 195px;
 	height: 240px;
 }
-				.profile img {
-					width: 195px;
-					height: 195px;
+				.officer{
+				    width: 195px;
+				    height: 195px;
+				    border-radius: 50%;
+				    background-repeat: no-repeat; 
+				    background-position: center center; 
+				    background-size: cover; 
 				}
-				.profile span {
-					font-weight: 600;
-				}
-				#about {
-					padding-top: 35px;
-					text-align: justify ;
+				.one{
+				    background-image: url('default.png');
 				}
 .footer{
 	width: 650px;
