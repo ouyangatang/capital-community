@@ -59,8 +59,8 @@ html, body{
 }
 				.inner{
 					position: relative;
-					top: 40%;
-					transform: translateY(-70%);
+					top: 30%;
+					transform: translateY(-50%);
     				max-width: 650px;
     				margin: 0 auto;
 				}
@@ -70,10 +70,11 @@ html, body{
 				    				color: white;
 				    				margin-right: 20px;
 								}
+								.inside img {
+									width: 300px;
+								}
 								.splash h1 {
-									font-family: 'Nixie One', cursive;
-									font-size: 40px;
-									text-align: right;
+									display:none;
 								}
 								.splash h2 {
 									font-family: 'Merriweather', serif;
@@ -142,7 +143,15 @@ nav{
 	margin: 10px;
 	max-width: 195px;
 	height: 240px;
+	overflow: hidden;
+	position: relative;
+	transition: height 0.5s;
+	-webkit-transition:height 0.5s; 
 }
+				.profile:hover{
+					height: auto;
+					background-color: pink;
+				}
 				.officer{
 				    width: 195px;
 				    height: 195px;
