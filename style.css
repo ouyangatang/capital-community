@@ -51,6 +51,7 @@ table {
 /*start*/
 html, body{
 	height: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 .splash {
 	height: 100vh;
@@ -60,36 +61,38 @@ html, body{
 					position: relative;
 					top: 40%;
 					transform: translateY(-70%);
-    				width: 650px;
+    				max-width: 650px;
     				margin: 0 auto;
 				}
-				.inside{
-    				width: 300px;
-    				float: right;
-    				color: white;
-				}
-				.splash h1 {
-					font-family: 'Nixie One', cursive;
-					font-size: 50px;
-					text-align: right;
-				}
-				.splash h2 {
-					font-family: 'Lora', serif;
-					font-style: italic;
-					font-size: 20px;
-					text-align: right;
-				}
+								.inside{
+				    				width: 300px;
+				    				float: right;
+				    				color: white;
+				    				margin-right: 20px;
+								}
+								.splash h1 {
+									font-family: 'Nixie One', cursive;
+									font-size: 40px;
+									text-align: right;
+								}
+								.splash h2 {
+									font-family: 'Lora', serif;
+									font-style: italic;
+									font-size: 20px;
+									text-align: right;
+								}
 nav{
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	padding: 20px 0;
-	letter-spacing: 2px;
+	padding: 10px 0;
 	background-color: white;
+	font-family: 'Lora', serif;
+	font-style: italic;
 }
 				nav ul{
 					list-style-type: none;
-					width: 650px;
+					max-width: 650px;
 					margin: 0 auto;
 				}
 				nav li{
@@ -98,6 +101,13 @@ nav{
 					float: right;
 					text-align: center;
 				}
+				nav a {
+					text-decoration: none;
+					color: #000;
+				}
+				nav a:hover {
+					color: #444;
+				}
 				.fixed {
 					position: fixed; 
 					top: 0; 
@@ -105,7 +115,7 @@ nav{
 					z-index: 1;
 				}
 .content{
-	width: 650px;
+	max-width: 650px;
 	margin: 0 auto;
 	height: 100%;
 }	
@@ -132,7 +142,7 @@ nav{
 	float: left;
 	text-align: center;
 	margin: 10px;
-	width: 195px;
+	max-width: 195px;
 	height: 240px;
 }
 				.officer{
@@ -147,7 +157,7 @@ nav{
 				    background-image: url('default.png');
 				}
 .footer{
-	width: 650px;
+	max-width: 650px;
 	margin: 0 auto;
 	padding: 20px 0;
 	text-align: center;
