@@ -115,10 +115,8 @@
 						 $('nav').removeClass('fixednav');
 					 }
 				});
-			});
 
 		  	//affixing the reading position indicator
-		   	$(document).ready(function(){
 			   $(window).bind('scroll', function() {
 			   var navHeight = $( window ).height() - 50;
 					 if ($(window).scrollTop() > navHeight) {
@@ -128,48 +126,46 @@
 						 $('progress').removeClass('fixedprog');
 					 }
 				});
-			});
 
-		   	//scrollto functions
-			$("#one").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $("#1").offset().top
-		    }, 1000);
-			});
-			
-			$("#two").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $("#2").offset().top
-		    }, 1000);
-			});
-			
-			$("#three").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $("#3").offset().top
-		    }, 1000);
-			});
-			
-			$("#four").click(function() {
-		    $('html, body').animate({
-		        scrollTop: $("#4").offset().top
-		    }, 1000);
-			});
+			   	//scrollto functions
+				$("#one").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#1").offset().top
+			    }, 1000);
+				});
+				
+				$("#two").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#2").offset().top
+			    }, 1000);
+				});
+				
+				$("#three").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#3").offset().top
+			    }, 1000);
+				});
+				
+				$("#four").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#4").offset().top
+			    }, 1000);
+				});
 
 			//reading progress indicator
-			$(document).on('ready', function() {  
-			var winHeight = $(window).height(), 
-			    docHeight = $(document).height(),
-			    progressBar = $('progress'),
-			    max, value;
+				var winHeight = $(window).height(), 
+				    docHeight = $(document).height(),
+				    progressBar = $('progress'),
+				    max, value;
 
-			  /* Set the max scrollable area */
-			  max = docHeight - winHeight - winHeight; //two times so not to include the landing page
-			  progressBar.attr('max', max);
+				  /* Set the max scrollable area */
+				  max = docHeight - winHeight - winHeight; //two times so not to include the landing page
+				  progressBar.attr('max', max);
 
-			$(document).on('scroll', function(){
-			    value = $(window).scrollTop() - 0.8*winHeight;
-			    progressBar.attr('value', value);
-			  });
+				$(document).on('scroll', function(){
+				    value = $(window).scrollTop() - 0.8*winHeight;
+				    progressBar.attr('value', value);
+				  });
 			});
 		</script>
 	</body>
