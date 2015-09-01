@@ -5,4 +5,4 @@ It's a community service organization that aims to increase financial literacy i
 
 For now, you can view the site (in progress) at https://ouyangatang.github.io/capital-community. 
 
-Once it's done, it will be on the domain (capitalcommunity.us)
+Once it's done, it will be on the domain (capitalcommunity.us) and replace the current site. 
