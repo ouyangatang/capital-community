@@ -163,11 +163,11 @@
 			    max, value;
 
 			  /* Set the max scrollable area */
-			  max = docHeight - winHeight;
+			  max = docHeight - winHeight - winHeight; //two times so not to include the landing page
 			  progressBar.attr('max', max);
 
 			$(document).on('scroll', function(){
-			    value = $(window).scrollTop();
+			    value = $(window).scrollTop() - 0.8*winHeight;
 			    progressBar.attr('value', value);
 			  });
 			});
