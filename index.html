@@ -34,27 +34,27 @@
 		<!--event pic, about us, missions, partners, officers, video, contact/donate, alumni-->
 				<nav>
 						<ul>
-							<li><a href="#four" id = "four">CONTACT/</a></li> 
-							<li><a href="#three" id = "three">PARTNERS /</a></li>
-							<li><a href="#two" id = "two">TEAM /</a></li>
-							<li><a href="#one" id = "one">ABOUT /</a></li>
+							<li><a href="#four">CONTACT/</a></li> 
+							<li><a href="#three">PARTNERS /</a></li>
+							<li><a href="#two">TEAM /</a></li>
+							<li><a href="#one">ABOUT /</a></li>
 						</ul>
 				</nav>
 				<progress value="0"></progress>
 			</div>
 
-			<div class ="content" id="1">
+			<div class ="content" id="one">
 				<h2> About us.</h2>	
 				<p>Our mission is to educate students and adults in personal finance and raise awarness of predatory lending in underserved communities.</p>
 			</div>
 			<div class= "scrollsection"  data-parallax="scroll" data-image-src="" data-speed="0.6">
-					<div class ="content" id="2">
+					<div class ="content" id="two">
 						<h2> Our partners.</h2>	<br>
 							<p>We've got a ton.</p>
 						
 					</div>
 			</div>
-			<div class ="content" id="3">
+			<div class ="content" id="three">
 				<h2> Meet our officers.</h2>	<br>
 				<div class = "profile">
 					<div class = "officer one"></div>
@@ -91,7 +91,7 @@
 				
 			</div>
 			<div class= "scrollsection"  data-parallax="scroll" data-image-src="" data-speed="0.2">
-					<div class ="content" id="4">
+					<div class ="content" id="four">
 						<h2> Reach out. </h2>	<br><br>
 							
 						<p>For more questions, please <a href="mailto:jessica.ouyang@gmail.com">email Jessica</a>.</p> 
@@ -127,30 +127,15 @@
 					 }
 				});
 
-			   	//scrollto functions
-				$("#one").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $("#1").offset().top
+			    /**
+		         * This part causes smooth scrolling using scrollto.js
+		         * We target all a tags inside the nav, and apply the scrollto.js to it.
+		         */
+		        $("nav a").click(function(){
+		            $('html, body').animate({
+			        scrollTop: $(this.hash).offset().top
 			    }, 1000);
-				});
-				
-				$("#two").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $("#2").offset().top
-			    }, 1000);
-				});
-				
-				$("#three").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $("#3").offset().top
-			    }, 1000);
-				});
-				
-				$("#four").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $("#4").offset().top
-			    }, 1000);
-				});
+		        });
 
 			//reading progress indicator
 				var winHeight = $(window).height(), 
@@ -159,11 +144,11 @@
 				    max, value;
 
 				  /* Set the max scrollable area */
-				  max = docHeight - winHeight - winHeight; //two times so not to include the landing page
+				  max = docHeight - winHeight - 0.9*winHeight; //two times so not to include the landing page
 				  progressBar.attr('max', max);
 
 				$(document).on('scroll', function(){
-				    value = $(window).scrollTop() - 0.8*winHeight;
+				    value = $(window).scrollTop() - 0.9*winHeight;
 				    progressBar.attr('value', value);
 				  });
 
