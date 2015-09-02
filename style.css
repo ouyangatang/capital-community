@@ -105,6 +105,9 @@ nav{
 				nav a:hover {
 					color: #37d103;
 				}
+				nav a:active {
+				    color: #37d103;
+				}
 				.fixednav {
 					position: fixed; 
 					top: 0; 
@@ -114,7 +117,7 @@ nav{
 				}
 progress {
 	width: 100%;
-	height: 5px;
+	height: 7px;
 
 	position: absolute;
 	bottom: 3px;
