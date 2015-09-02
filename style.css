@@ -46,11 +46,10 @@ table {
 	border-spacing: 0;
 }
 
-
-
 /*start*/
 html, body{
 	height: 100%;
+	width: 100%;
 	font-family: 'Raleway', sans-serif;
 }
 .splash {
@@ -147,10 +146,15 @@ progress::-moz-progress-bar {
 					top: 40px; 
 					z-index: 100;
 				}
+.bodycontainer {
+	padding: 20px 0;
+	background-color: #FFF;
+}
 .content{
 	max-width: 650px;
 	margin: 0 auto;
 	height: 100%;
+	padding-top: 60px;
 }	
 				h2 {
 					text-align: center;
@@ -176,16 +180,12 @@ progress::-moz-progress-bar {
 	text-align: center;
 	margin: 10px;
 	max-width: 195px;
-	height: 240px;
+	height: 250px;
 	overflow: hidden;
 	position: relative;
 	transition: height 0.5s;
 	-webkit-transition:height 0.5s; 
 }
-				.profile:hover{
-					height: auto;
-					background-color: pink;
-				}
 				.officer{
 				    width: 195px;
 				    height: 195px;
@@ -195,8 +195,15 @@ progress::-moz-progress-bar {
 				    background-size: cover; 
 				}
 				.one{
-				    background-image: url('default.png');
+				    background-image: url('img/default.png');
 				}
+				.jack {
+					background-image: url('img/jack.jpg');
+				}
+.footercontainer {
+	background-color: #777;
+	padding-bottom: 30px;
+}
 .footer{
 	max-width: 650px;
 	margin: 0 auto;

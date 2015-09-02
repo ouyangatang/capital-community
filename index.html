@@ -27,7 +27,7 @@
 				<div class="inner">
 					<div class="inside">
 						<h1>CAPITAL COMMUNITY</h1>
-						<img src="logo.png" alt="CAPITAL COMMUNITY">
+						<img src="img/logo.png" alt="CAPITAL COMMUNITY">
 						<h2>financial literacy for all.</h2>	
 					</div>
 				</div>
@@ -35,17 +35,18 @@
 				<nav>
 						<ul>
 							<li><a href="#four">CONTACT/</a></li> 
-							<li><a href="#three">PARTNERS /</a></li>
-							<li><a href="#two">TEAM /</a></li>
+							<li><a href="#three">TEAM /</a></li>
+							<li><a href="#two">PARTNERS /</a></li>
 							<li><a href="#one">ABOUT /</a></li>
 						</ul>
 				</nav>
 				<progress value="0"></progress>
 			</div>
-
+		</div>
+		<div class = "bodycontainer">
 			<div class ="content" id="one">
 				<h2> About us.</h2>	
-				<p>Our mission is to educate students and adults in personal finance and raise awarness of predatory lending in underserved communities.</p>
+				<p>Capital Community is a registered 501c3 nonprofit that aims to educate young children, adolescents, and adults on personal finance topics that will positively impact the way the community values money. Capital Community is run by University of Texas at Austin undergraduate students raising awareness of predatory lending in underserved communities. Our organization strives on three distinct pillars: lesson creation, sustainable partnerships, and volunteering. Our people dedicate time to creating informative workshops and lesson plans for young students and adults to provide the community with the information they need.  We work with local Austin schools and nonprofits to develop relationships to continue increasing our overall impact through active volunteering in the community.</p>
 			</div>
 			<div class= "scrollsection"  data-parallax="scroll" data-image-src="" data-speed="0.6">
 					<div class ="content" id="two">
@@ -65,9 +66,9 @@
 					I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.</div>
 				</div>
 				<div class = "profile">
-					<div class = "officer one"></div>
-					<p><span>Name</span></p>
-					<p>Position</p>
+					<div class = "officer jack"></div>
+					<p><span>Jack Chang</span></p>
+					<p>Director of Curriculum (Elementary)</p>
 					<br>
 					<div class = "bio">I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.
 					I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.I love cats.</div>
@@ -87,7 +88,21 @@
 					<p><span>Name</span></p>
 					<p>Position</p>
 				</div>
-
+				<div class = "profile">
+					<div class = "officer one"></div>
+					<p><span>Name</span></p>
+					<p>Position</p>
+				</div>
+				<div class = "profile">
+					<div class = "officer one"></div>
+					<p><span>Name</span></p>
+					<p>Position</p>
+				</div>
+				<div class = "profile">
+					<div class = "officer one"></div>
+					<p><span>Name</span></p>
+					<p>Position</p>
+				</div>
 				
 			</div>
 			<div class= "scrollsection"  data-parallax="scroll" data-image-src="" data-speed="0.2">
@@ -98,43 +113,31 @@
 					</div>
 			</div>
 		</div>
-		<div class ="bodycontainer">
+		<div class ="footercontainer">
 			<div class ="footer">
 					 &copy; 2014 Go Girl Code Camp. Site created by Jessica Ouyang. All rights reserved. 
 			</div>
 		</div>
 		<script>
-			//affixing the nav bar
+			//affixing the nav bar and progress bar
 		    $(document).ready(function(){
 			   $(window).bind('scroll', function() {
 			   var navHeight = $( window ).height() - 50;
 					 if ($(window).scrollTop() > navHeight) {
 						 $('nav').addClass('fixednav');
-					 }
-					 else {
-						 $('nav').removeClass('fixednav');
-					 }
-				});
-
-		  	//affixing the reading position indicator
-			   $(window).bind('scroll', function() {
-			   var navHeight = $( window ).height() - 50;
-					 if ($(window).scrollTop() > navHeight) {
 						 $('progress').addClass('fixedprog');
 					 }
 					 else {
+						 $('nav').removeClass('fixednav');
 						 $('progress').removeClass('fixedprog');
 					 }
 				});
 
-			    /**
-		         * This part causes smooth scrolling using scrollto.js
-		         * We target all a tags inside the nav, and apply the scrollto.js to it.
-		         */
+			//smooth scrolltos 
 		        $("nav a").click(function(){
 		            $('html, body').animate({
 			        scrollTop: $(this.hash).offset().top
-			    }, 1000);
+			    }, 1500);
 		        });
 
 			//reading progress indicator
