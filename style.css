@@ -175,7 +175,7 @@ progress::-moz-progress-bar {
 	margin: 100px 0;
 }
 		.in {
-			width: 650px;
+			max-width: 650px;
 			margin: 0 auto;
 			background-color: transparent;
 		}
@@ -229,15 +229,21 @@ progress::-moz-progress-bar {
 	float: left;
 	text-align: center;
 	width: 32%;
-	height: 200px;
+	min-width: 100px;
+	min-height: 220px;
 	overflow: hidden;
 	position: relative;
 	transition: height 0.5s;
 	-webkit-transition:height 0.5s; 
-}				
+}			
+				@media screen and (max-width: 600px){
+					.profile {
+						width: 50%;
+					}
+				}
 				.officer{
-				    width: 140px;
-				    height: 140px;
+				    width: 160px;
+				    height: 160px;
 				    border-radius: 50%;
 				    background-repeat: no-repeat; 
 				    background-position: center center; 
