@@ -158,8 +158,30 @@ progress::-moz-progress-bar {
 	padding: 50px 0;
 	height: 100%;
 }
-#two img{
-	width: 32%;
+.partner{
+	width: 45%;
+	display: inline-block;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+				.partner img {
+					width: 70%;
+					max-width: 300px;
+					margin-left: 15%;
+				}
+				.partner h3 {
+					font-weight: 500;
+					margin-top: 20px;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				@media screen and (max-width: 600px){
+					.partner {
+						width: 100%;
+					}
+				}
+#two {
+	margin-top: 80px;
 }
 h2 {
 	text-align: center;
@@ -203,28 +225,29 @@ h2 {
 	width: 100%; 
 	overflow: hidden; 
 	height: 300px;
+	margin: 100px 0;
 }
 				.mapcontainer .content {
 					padding: 0;
 				}
-#map {
-	width: 100%;
-	height: 650px;
-	margin-top: -150px;
-}
-.mapoverlay { /* so you can scroll w/o it toggling the map */
-	background: transparent; 
-	position:relative; 
-	width: 100%;
-	height: 300px; 
-	margin-top: -300px;
-	margin-bottom: 0;
-}
-.mapblurb {
-	background-color: #FFF;
-	width: 350px;
-	padding: 25px;
-}
+				#map {
+					width: 100%;
+					height: 650px;
+					margin-top: -150px;
+				}
+				.mapoverlay { /* so you can scroll w/o it toggling the map */
+					background: transparent; 
+					position:relative; 
+					width: 100%;
+					height: 300px; 
+					margin-top: -400px;
+					margin-bottom: 0;
+				}
+				.mapblurb {
+					background-color: #FFF;
+					width: 350px;
+					padding: 25px;
+				}
 .profile {
 	float: left;
 	text-align: center;
@@ -298,17 +321,18 @@ h2 {
 				}
 .contact {
 	height: 500px;
+	margin-bottom: 0;
 }
-.contact a {
-    text-decoration: none;
-    color: #999;
-}
-.contact a:hover {
-	color: #37d103;
-}
-.contact a:active {
-    color: #37d103;
-}
+				.contact a {
+				    text-decoration: none;
+				    color: #999;
+				}
+				.contact a:hover {
+					color: #37d103;
+				}
+				.contact a:active {
+				    color: #37d103;
+				}
 .footercontainer {
 	background-color: #000;
 	color: #fff;
