@@ -349,3 +349,8 @@ h2 {
 	height: 40px;
 	text-align: center;
 }	
+				.footer a {
+					text-decoration: none;
+					color: #DDD;
+					font-size: 13px;
+				}
