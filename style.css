@@ -351,5 +351,8 @@ h2 {
 }	
 				.footer a {
 					text-decoration: none;
-					color: #DDD;
+					color: #CCC;
+				}
+				.footer a:hover {
+					color: #FFF;
 				}
